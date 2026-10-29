@@ -1,0 +1,24 @@
+@use "../utilities/variables" as *;
+
+/* Clase base para heredar */
+%caja-sombreada {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform $transicion, box-shadow $transicion;
+}
+
+.feature-card, .card {
+    @extend %caja-sombreada;
+    border: none;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    
+    /* Nesting */
+    .card-body {
+        padding: 1.5rem;
+    }
+}

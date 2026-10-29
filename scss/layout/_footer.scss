@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+
+footer {
+    background-color: $texto-oscuro;
+    border-top: 4px solid $color-primario;
+    
+    p {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+}

@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.hero-section {
+    background: linear-gradient(135deg, $texto-oscuro 0%, #1a252f 100%);
+    color: #ffffff;
+    padding: 3rem 1.5rem;
+    
+    .container {
+        @include flex-center(column, center, center);
+    }
+
+    h1 {
+        color: $color-secundario;
+        font-weight: bold;
+    }
+
+    /* Responsive Desktop */
+    @media (min-width: 1024px) {
+        padding: 6rem 2rem;
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+}
