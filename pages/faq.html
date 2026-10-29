@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes y Soporte | AutoNegocio</title>
+    <meta name="description" content="Resolvemos todas tus dudas sobre la implementación, requisitos técnicos y soporte de nuestras herramientas de automatización.">
+    <meta name="keywords" content="soporte técnico, preguntas frecuentes, implementación software, requisitos técnicos, ayuda AutoNegocio">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo-autonegocio.png" alt="Logotipo oficial de AutoNegocio" class="logo-header" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menuNavegacion">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <section class="text-center mb-5" data-aos="fade-down" data-aos-duration="800">
+            <h1>Preguntas Frecuentes</h1>
+            <p class="lead">Todo lo que necesitás saber antes de dar el salto a la automatización.</p>
+        </section>
+
+        <section class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+            <article class="col-lg-8">
+                <div class="accordion" id="acordeonFaq">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingUno">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+                                ¿Necesito conocimientos previos de programación?
+                            </button>
+                        </h2>
+                        <div id="collapseUno" class="accordion-collapse collapse show" aria-labelledby="headingUno" data-bs-parent="#acordeonFaq">
+                            <div class="accordion-body">
+                                No. Todos nuestros productos digitales están diseñados con interfaces amigables (plug & play). Solo necesitás conocimientos básicos de gestión comercial.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingDos">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos" aria-expanded="false" aria-controls="collapseDos">
+                                ¿Las plantillas y dashboards tienen un pago único o es suscripción?
+                            </button>
+                        </h2>
+                        <div id="collapseDos" class="accordion-collapse collapse" aria-labelledby="headingDos" data-bs-parent="#acordeonFaq">
+                            <div class="accordion-body">
+                                Los productos digitales del catálogo son de pago único e incluyen actualizaciones menores gratuitas. Los servicios de integración a medida se cotizan por proyecto.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTres">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+                                ¿Ofrecen soporte post-implementación?
+                            </button>
+                        </h2>
+                        <div id="collapseTres" class="accordion-collapse collapse" aria-labelledby="headingTres" data-bs-parent="#acordeonFaq">
+                            <div class="accordion-body">
+                                Sí, brindamos soporte técnico por correo electrónico durante los primeros 3 meses tras la adquisición de cualquier producto o servicio.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">Copyright 2026 - AutoNegocio</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
