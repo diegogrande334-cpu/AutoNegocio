@@ -1,20 +1,20 @@
 @use "../utilities/variables" as *;
 
 .navbar {
-    background-color: $texto-oscuro !important;
-    border-bottom: 3px solid $color-primario;
+    background-color: $bg-oscuro !important;
+    border-bottom: 1px solid $bg-tarjetas;
 
     .navbar-brand img {
-        animation: latido-suave 4s ease-in-out infinite; /* Aplicamos la animación al logo */
+        animation: latido-suave 4s ease-in-out infinite; 
     }
 
     .nav-link {
-        color: #ffffff !important;
+        color: $texto-claro !important;
         font-weight: 500;
         transition: color $transicion;
 
         &:hover, &.active {
-            color: $color-secundario !important;
+            color: $cta-naranja !important;
         }
     }
 }

@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos Digitales y Dashboards | AutoNegocio</title>
-    <meta name="description" content="Catálogo de productos digitales de AutoNegocio: dashboards financieros, plantillas de gestión y scripts de automatización para pymes.">
+    <title>Catálogo de Productos y Dashboards | AutoNegocio</title>
+    <meta name="description" content="Catálogo completo de productos digitales: dashboards financieros, plantillas de gestión y scripts de automatización para escalar tu pyme.">
     <meta name="keywords" content="dashboards financieros, plantillas excel, automatización pymes, scripts de ventas, productos digitales">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/main.css">
 </head>
-<body>
+<body data-bs-theme="dark">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/logo-autonegocio.png" alt="Logotipo oficial de AutoNegocio" class="logo-header" width="150">
+                    <img src="../assets/logo-autonegocio-white.png" alt="Logotipo oficial de AutoNegocio" width="160">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-label="Abrir menú de navegación">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="menuNavegacion">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav align-items-center">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="productos.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Consultoría</a></li>
                         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a class="btn w-100" href="contacto.html" style="background-color: #ff6000; color: white; font-weight: 600;">Comenzar Ahora</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -36,45 +39,69 @@
 
     <main class="container py-5">
         <section class="text-center mb-5" data-aos="fade-down" data-aos-duration="800">
-            <h1>Nuestros Productos Digitales</h1>
-            <p class="lead">Soluciones listas para implementar en tu ecosistema empresarial.</p>
+            <h1 class="fw-bold">Catálogo de Soluciones</h1>
+            <p class="lead" style="color: #94a3b8;">Herramientas listas para integrarse al ecosistema de tu empresa.</p>
         </section>
 
         <section class="row g-4" data-aos="fade-up" data-aos-duration="1000">
+            <!-- Producto 1 -->
             <article class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="../assets/producto-dashboard.jpg" class="card-img-top" alt="Captura de pantalla de un dashboard financiero interactivo">
+                <div class="card h-100 cursor-pointer">
+                    <div class="position-relative">
+                        <span class="badge position-absolute top-0 start-0 m-3" style="background-color: #ff6000;">Top Ventas</span>
+                        <img src="../assets/thumb-financiero.jpg" class="card-img-top" alt="Dashboard Financiero interactivo">
+                    </div>
                     <div class="card-body">
-                        <h2 class="card-title h5">Dashboard Financiero PRO</h2>
-                        <p class="card-text">Panel de control automatizado en Power BI y Excel para monitorear flujo de caja y rentabilidad.</p>
-                        <a href="contacto.html" class="btn btn-outline-primary">Consultar</a>
+                        <h2 class="card-title h5 fw-bold">Dashboard Financiero PRO</h2>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning me-2 fw-bold">5.0</span>
+                            <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="card-text small" style="color: #94a3b8;">Monitoreo de flujo de caja y rentabilidad en tiempo real.</p>
+                        <div class="fs-4 fw-bold mb-3">$49.99 USD</div>
+                        <a href="contacto.html" class="btn w-100" style="background-color: #ff6000; color: white;">Adquirir Ahora</a>
                     </div>
                 </div>
             </article>
+            <!-- Producto 2 -->
             <article class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="../assets/producto-crm.jpg" class="card-img-top" alt="Interfaz de sistema de gestión de clientes CRM">
+                <div class="card h-100 cursor-pointer">
+                    <img src="../assets/thumb-crm.jpg" class="card-img-top" alt="Sistema de gestión CRM">
                     <div class="card-body">
-                        <h2 class="card-title h5">Plantilla CRM Base</h2>
-                        <p class="card-text">Sistema de seguimiento de leads y embudos de venta optimizado para pymes.</p>
-                        <a href="contacto.html" class="btn btn-outline-primary">Consultar</a>
+                        <h2 class="card-title h5 fw-bold">Plantilla CRM Avanzada</h2>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning me-2 fw-bold">4.8</span>
+                            <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-half text-warning"></i>
+                        </div>
+                        <p class="card-text small" style="color: #94a3b8;">Seguimiento de leads y embudos de venta sin pagar suscripciones.</p>
+                        <div class="fs-4 fw-bold mb-3">$29.99 USD</div>
+                        <a href="contacto.html" class="btn w-100" style="background-color: #ff6000; color: white;">Adquirir Ahora</a>
                     </div>
                 </div>
             </article>
+            <!-- Producto 3 -->
             <article class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="../assets/producto-inventario.jpg" class="card-img-top" alt="Gráficos de control de stock e inventario">
+                <div class="card h-100 cursor-pointer">
+                    <div class="position-relative">
+                        <span class="badge position-absolute top-0 start-0 m-3" style="background-color: #10b981;">Nuevo</span>
+                        <img src="../assets/thumb-inventario.jpg" class="card-img-top" alt="Control de stock automatizado">
+                    </div>
                     <div class="card-body">
-                        <h2 class="card-title h5">Gestor de Inventario Automático</h2>
-                        <p class="card-text">Script de sincronización de stock con alertas tempranas de reposición.</p>
-                        <a href="contacto.html" class="btn btn-outline-primary">Consultar</a>
+                        <h2 class="card-title h5 fw-bold">Gestor de Inventario Automático</h2>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning me-2 fw-bold">4.9</span>
+                            <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="card-text small" style="color: #94a3b8;">Script de sincronización de stock con alertas de reposición.</p>
+                        <div class="fs-4 fw-bold mb-3">$39.99 USD</div>
+                        <a href="contacto.html" class="btn w-100" style="background-color: #ff6000; color: white;">Adquirir Ahora</a>
                     </div>
                 </div>
             </article>
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer class="text-center py-4 mt-5">
         <p class="mb-0">Copyright 2026 - AutoNegocio</p>
     </footer>
 

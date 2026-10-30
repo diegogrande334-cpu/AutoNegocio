@@ -1,5 +1,11 @@
-$color-primario: #0056b3;
-$color-secundario: #00a8ff;
-$fondo-claro: #f4f6f9;
-$texto-oscuro: #2c3e50;
-$transicion: 0.3s ease;
+// Paleta Dark Tech & High Conversion (Estilo Udemy/Hotmart)
+$bg-oscuro: #0f172a;        // Azul medianoche profundo (Fondo principal)
+$bg-tarjetas: #1e293b;      // Azul pizarra (Para destacar cajas sobre el fondo)
+$texto-claro: #f8fafc;      // Blanco humo (Lectura principal)
+$texto-mutado: #94a3b8;     // Gris azulado (Subtítulos)
+$cta-naranja: #ff6000;      // Naranja vibrante (Botones de compra/acción)
+$cta-hover: #e05500;        // Naranja oscuro (Interacción)
+$color-exito: #10b981;      // Verde esmeralda (Insignias de "Más vendido" o reviews)
+
+$transicion: 0.3s ease-in-out;
+$sombra-neon: 0 4px 20px rgba(255, 96, 0, 0.3);

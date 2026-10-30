@@ -1,11 +1,12 @@
 @use "../utilities/variables" as *;
 
 footer {
-    background-color: $texto-oscuro;
-    border-top: 4px solid $color-primario;
+    background-color: #0b1120; // Un tono más oscuro que el fondo principal
+    border-top: 1px solid $bg-tarjetas;
     
     p {
         font-size: 0.9rem;
+        color: $texto-mutado;
         letter-spacing: 0.5px;
     }
 }

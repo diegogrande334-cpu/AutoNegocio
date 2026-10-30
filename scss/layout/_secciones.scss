@@ -2,24 +2,24 @@
 @use "../utilities/mixins" as *;
 
 .hero-section {
-    background: linear-gradient(135deg, $texto-oscuro 0%, #1a252f 100%);
-    color: #ffffff;
-    padding: 3rem 1.5rem;
+    // Fondo radial sutil para centrar la atención sin saturar
+    background: radial-gradient(circle at 50% -20%, lighten($bg-oscuro, 8%), $bg-oscuro 80%);
+    border-bottom: 1px solid $bg-tarjetas;
     
-    .container {
-        @include flex-center(column, center, center);
+    .badge {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
     }
+}
 
-    h1 {
-        color: $color-secundario;
-        font-weight: bold;
-    }
-
-    /* Responsive Desktop */
-    @media (min-width: 1024px) {
-        padding: 6rem 2rem;
-        h1 {
-            font-size: 3.5rem;
+.trust-section {
+    img {
+        filter: grayscale(100%) opacity(60%);
+        transition: $transicion;
+        
+        &:hover {
+            filter: grayscale(0%) opacity(100%);
         }
     }
 }
